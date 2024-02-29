@@ -1,0 +1,54 @@
+@import "../../variables.css";
+.gbt3__features {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+}
+.gbt3__featuers_heading {
+  flex: 1;
+  flex-direction: column;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  text-align: left;
+  margin-right: 5rem;
+}
+.gbt3__featuers_heading h1 {
+  font-family: var(--font-family);
+  font-weight: 800;
+  font-style: normal;
+  font-size: 34px;
+  line-height: 45px;
+}
+.gbt3__featuers_heading p {
+  font-family: var(--font-family);
+  font-weight: 500;
+  font-style: normal;
+  font-size: 16px;
+  line-height: 30px;
+  color: var(--color-subtext);
+  margin-top: 2rem;
+}
+.gbt3__featuers_container {
+  flex-direction: column;
+  display: flex;
+  flex: 1.5;
+  align-items: center;
+  justify-content: flex-start;
+}
+/*! .....................................................................MEDIA QUERIY...............................  */
+@media screen and (max-width: 990px) {
+  .gbt3__features {
+    flex-direction: column;
+  }
+  .gbt3__featuers_heading {
+    margin: 0 0 2rem 0;
+  }
+}
+@media screen and (max-width: 550px) {
+  .gbt3__featuers_heading h1 {
+    font-size: 28px;
+    line-height: 38px;
+  }
+}
